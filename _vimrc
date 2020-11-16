@@ -1,3 +1,11 @@
+"将界面设置成英文
+set nocompatible
+
+let $LANG = 'en'  "set message language 
+set langmenu=en   "set menu's language of gvim. no spaces beside '=' 
+"source $VIMRUNTIME\vimrc_examplie.vim
+
+
 " 1. 注释
     :vnoremap ci :s/^/\/\/<cr>
     :vnoremap cu :s/\/\//<cr>
@@ -11,6 +19,11 @@ colorscheme desert
 " 禁止生成备份文件和交换文件
 set nobackup
 set noswapfile
+
+" 设置utf-8的编码，否者边框的在float.vim文件里面会出现编码错误
+set encoding=utf-8
+let &termencoding=&encoding
+set fileencodings=utf-8,gbk,ucs-bom,cp936
 
 " 设置tab键为4个空格
 set ts=4
@@ -173,5 +186,3 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
     "在文件中查找
     :nnoremap ck :vsc Edit.FindinFiles<CR>
-
-
