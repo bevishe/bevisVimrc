@@ -4,14 +4,7 @@ set nocompatible
 let $LANG = 'en'  "set message language 
 set langmenu=en   "set menu's language of gvim. no spaces beside '=' 
 
-
 "source $VIMRUNTIME\vimrc_examplie.vim
-
-
-
-
-
-
 " 1. 注释
     :vnoremap ci :s/^/\/\/<cr>
     :vnoremap cu :s/\/\//<cr>
@@ -240,4 +233,6 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 :inoremap <S-CR> <Esc>o<Esc>
 
 " 添加个人信息已经编辑时间
-:map <F2> ggi"""<Esc>oDate:<Esc>r!date/t<CR><Esc>ocoder:bevishe<Esc>o"""
+:map <F2> ggi"""<Esc>oDate:<Esc>:r!date/t<CR><Esc>ocoder:<Esc>obevishe<Esc>o"""<C-Q><C-m>
+
+
