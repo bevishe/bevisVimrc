@@ -233,6 +233,5 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 :inoremap <S-CR> <Esc>o<Esc>
 
 " 添加个人信息已经编辑时间
-:map <F2> ggi"""<Esc>oDate:<Esc>:r!date/t<CR><Esc>ocoder:<Esc>obevishe<Esc>o"""<C-Q><C-m>
-
+:map <F2> ggi<CR><Esc>ggi"""<CR><Esc>oDate:<Esc>:r!date/t<CR><Esc>ocoder:<Esc>obevishe<Esc>o"""<CR>
 
