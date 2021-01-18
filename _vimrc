@@ -232,6 +232,7 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 :nmap <S-CR> o<Esc>
 :inoremap <S-CR> <Esc>o<Esc>
 
-" 添加个人信息已经编辑时间
+
+" 添加个人信息已经编辑时间(文件创建时间和编辑人)
 :map <F2> ggi<CR><Esc>ggi"""<Esc>oDate:<Esc>:r!date/t<CR><Esc>ocoder:<Esc>obevishe<Esc>o"""<CR>
 
